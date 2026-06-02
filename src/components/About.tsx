@@ -125,7 +125,7 @@ export default function About() {
               >
                 <Bot size={16} className="text-ai-glow" /> Launch Manoj AI
               </button>
-              <a href="/resume.pdf" target="_blank" className="px-6 py-3 bg-white/5 border border-white/10 hover:border-ai-accent/50 rounded-lg text-ai-subtext hover:text-ai-text font-medium hover:bg-white/10 transition-all flex items-center gap-2">
+              <a href="/resume/J_Manoj_Resume.docx" target="_blank" className="px-6 py-3 bg-white/5 border border-white/10 hover:border-ai-accent/50 rounded-lg text-ai-subtext hover:text-ai-text font-medium hover:bg-white/10 transition-all flex items-center gap-2">
                 <FileText size={16} className="text-ai-accent" /> Resume
               </a>
             </div>
