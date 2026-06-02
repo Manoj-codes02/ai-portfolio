@@ -47,9 +47,9 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-full lg:w-1/3 flex justify-center perspective-[1000px]"
           >
-            <div className="relative group w-72 h-80 md:w-80 md:h-[22rem] rounded-2xl p-[2px] bg-gradient-to-b from-ai-blue/30 via-ai-violet/10 to-transparent">
-              <div className="relative w-full h-full bg-ai-card rounded-2xl overflow-hidden border border-white/10">
-                <img src="/profile.jpg" alt="Manoj" className="w-full h-full object-cover" />
+            <div className="relative group w-72 h-80 md:w-80 md:h-[22rem] rounded-2xl">
+              <div className="relative w-full h-full bg-ai-card rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Manoj" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>
@@ -125,7 +125,7 @@ export default function About() {
               >
                 <Bot size={16} className="text-ai-glow" /> Launch Manoj AI
               </button>
-              <a href="/resume/J_Manoj_Resume.docx" target="_blank" className="px-6 py-3 bg-white/5 border border-white/10 hover:border-ai-accent/50 rounded-lg text-ai-subtext hover:text-ai-text font-medium hover:bg-white/10 transition-all flex items-center gap-2">
+              <a href={`${import.meta.env.BASE_URL}resume/J_Manoj_Resume.docx`} target="_blank" className="px-6 py-3 bg-white/5 border border-white/10 hover:border-ai-accent/50 rounded-lg text-ai-subtext hover:text-ai-text font-medium hover:bg-white/10 transition-all flex items-center gap-2">
                 <FileText size={16} className="text-ai-accent" /> Resume
               </a>
             </div>
