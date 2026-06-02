@@ -164,7 +164,7 @@ export default function TimeChart() {
             </mask>
           </defs>
 
-          <g mask="url(#block-mask)">
+          <g mask={`url(${typeof window !== 'undefined' ? window.location.href.split('#')[0] : ''}#block-mask)`}>
             {/* The rotating container */}
             <motion.g
               animate={{ rotate: 360 }}
